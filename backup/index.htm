@@ -1,0 +1,70 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Wumpus</title>
+<link href="_css/styles.css" rel="stylesheet" type="text/css">
+<script src="_scripts/tabs.js" type="text/javascript" defer></script>
+</head>
+<body>
+<header role="banner">
+  <h1>Glenn's Training Exercise</h1>
+  <h2>Hunt the Wumpus!</h2>
+    <nav role="navigation">
+  </nav>
+</header>
+<main role="main">
+    <article role="article">
+    <aside role="complementary" class="languages">
+    <h3 class="current" id="currentCaveDisplay">
+     <span class="myCave" >
+            Hello
+     </span>
+    </h3>
+     <h3 class = "pathOptions">Pick a cave or shoot...</h3>
+     <h3 class = "arrowAmount">You have X arrows left...</h3>
+     <h3 class = "click"> Click on a tab below to move into a nearby cave.</h3>
+
+   <button id = "hideReset" onclick = "reloadPage()" >Reset</button>
+   <script> function reloadPage() {
+     window.location.reload();
+      }
+   </script>
+
+
+
+
+   <button id = "showShoot">Shoot</button>
+
+   <button id = "shootA" class = "shootButtonsOff">A</button>
+
+   <button id = "shootB" class = "shootButtonsOff" >B</button>
+
+   <button id = "shootC" class = "shootButtonsOff" >C</button>
+
+   <button id = "instructions" >Click here for instructions</button>
+
+
+
+       <div id="tabContainer">
+       <div id="tabs">
+         <ul>
+           <li id="tab1"><a id="t0" href="#tabPanel1">Current Cave</a></li>
+           <li id="tab2"><a id="t1" href="#tabPanel1">Path1</a></li>
+           <li id="tab3"><a id="t2" href="#tabPanel1">Path2</a></li>
+           <li id="tab4"><a id="t3" href="#tabPanel1">Path3</a></li>
+         </ul>
+      </div>
+      <div id="containers">
+      <div id="tabPanel1">
+        <h4 id="main">Click on a tab to choose a cave to move to. </br> If you are near the Wumpus you will smell him! </br> Click on the Shoot Button to shoot the Wumpus, when he is near.</br> If you move into a cave with a Wumpus in it, you die! <br> You only have 3 arrows. </br> If you are near a pit, you will feel a draft. </br> If you move into a cave with a pit, you die!</br> Good luck!</h4>
+        <p></p>
+        <img id = "image" src = "_images/Underworld-of-Teotihuacan.jpg" alt = "Initial Cave Image" width = 900>
+      </div>
+      </div>
+    </div>
+    </aside>
+  </article>
+</main>
+</body>
+</html>
